@@ -6,10 +6,18 @@
 		connectWalletConnect,
 		disconnect,
 		walletAddress
-	} from '$lib/stores/provider';
+	} from '$lib/auth/wallet/provider';
 	import { balanceOnBlock } from '$lib/stores/state';
 	import { formatEther } from 'ethers/lib/utils';
+
+	import Navbar from '$lib/components/reusable/Navbar.svelte';
 </script>
+
+
+
+<Navbar/>
+
+
 
 <main class="flex flex-col p-10 w-screen h-screen items-center gap-5 font-serif">
 	<h1 class="text-5xl text-black font-bold">Svelte Ethers Template</h1>
